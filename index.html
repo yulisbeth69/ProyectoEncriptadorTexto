@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encriptardor de Texto</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>    
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    <header>
+        <img src="./img/Vector.png" alt="logo de alura latam" class="logo">
+    </header>
+    <main >
+    <section>
+        <div>
+            <textarea id="text_insertado" class="text-area" cols="30" rows="10" placeholder="Ingrese el texto aqui"></textarea>
+        </div>        
+        <div>
+            <h6 class="informacion">Solo letras minusculas y sin acento</h6>
+         </div>
+         <div class="botones">
+         <button  class="btn_encriptar" onclick="Cifrar();">Encriptar</button>
+         <button class="btn_desencriptar" onclick="decifrar();">Desencriptar</button>
+         </div>
+    </section>
+
+    <section class="salida2">
+        <div class="muneco">            
+            <img src="./img/1.png" alt="El muñeco" class="Reemplazar" id="muñeco">
+        </div>
+        <div class="txt2" id="tex-salida">
+            <textarea id="texto_salida" class="mensaje" cols="20" rows="10"></textarea>
+            <button class="copiar" onclick="copiar();">Copiar</button>
+        </div>          
+    </section>
+    </main>
+    <footer class="rodapies">
+        <p>Desarrollado por: Gladys Zambrano 2024</p>
+    </footer>
+    <script src="app.js" defer></script>   
+
+</body>
+</html>
